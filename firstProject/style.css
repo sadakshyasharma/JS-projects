@@ -1,0 +1,33 @@
+.header {
+  background-color: black;
+  color: aqua;
+  padding: 13px 20px;
+}
+
+.navbutton {
+  color: white;
+  border: none;
+  padding: 10px;
+  background-color: black;
+  font-size: larger;
+  text-decoration: none;
+  margin: 15px;
+  
+}
+
+.navbutton:hover{
+ background-color: blueviolet;
+
+}
+
+#values{
+
+    padding: 15px;
+    margin: 10px;
+    float: right;
+    border-radius: 12px;
+    color: white;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;   
+}
