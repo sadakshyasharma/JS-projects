@@ -8,8 +8,6 @@ async function getapi(url) {
   const { results } = data;
 
   users = results;
-
-  console.log("danish", data);
   await users.map((item, index) => {
     console.log(item);
 
