@@ -7,6 +7,9 @@ async function getapi(url) {
   var data = await response.json();
   const { results } = data;
 
+
+
+
   
 
   users = results;
