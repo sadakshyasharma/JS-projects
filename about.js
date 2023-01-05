@@ -39,3 +39,4 @@ async function hideloader() {
     document.getElementById("myUl").appendChild(li);
   }
 }
+ 
