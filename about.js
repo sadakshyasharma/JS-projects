@@ -1,38 +1,37 @@
 const api_url = "https://randomuser.me/api";
-let users = [];
+// let users = [];
 let dataArray = [];
-
+getapi(api_url);
 async function getapi(url) {
-  const response = await fetch(url); //store
-  var data = await response.json();
-  const { results } = data;
+  for (i = 0; i < 10; i++) {
+    const response = await fetch(url); //store
+    var data = await response.json();
+    const { results } = data;
 
-
-
-
-  
-
-  users = results;
-  await users.map((item, index) => {
-    console.log(item);
+    // users = results;
+    // await users.map((item, index) => {
+    // console.log(item);
 
     dataArray.push(
-      item.name.title + " " + item.name.first + " " + item.name.last
+      results[0].name.title +
+        " " +
+        results[0].name.first +
+        " " +
+        results[0].name.last
     );
-  });
-  console.log(results);
-  if (response) {
-    hideloader();
   }
+  // console.log(results);
+  // if (response)
+  hideloader();
 
-  show(data);
+  //  show(data);
 }
-for (i = 0; i < 10; i++) {
-  getapi(api_url);
-  dataArray.push();
-}
+//  {
+//   getapi(api_url);
+//   dataArray.push();
+// }
 
-console.log(dataArray);s
+// console.log(dataArray);s
 async function hideloader() {
   for (let i = 0; i < dataArray.length; i++) {
     const li = document.createElement("li");
@@ -42,4 +41,3 @@ async function hideloader() {
     document.getElementById("myUl").appendChild(li);
   }
 }
- 
