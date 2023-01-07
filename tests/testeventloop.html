@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       const foo = () => console.log("First");
+const bar = () => setTimeout(() => console.log("Second"), 500);
+const baz = () => console.log("Third");
+
+bar();
+foo();
+baz();
+    </script>
+</body>
+</html>
